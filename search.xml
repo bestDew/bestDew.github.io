@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>测试</title>
-    <url>/2020/05/27/%E6%B5%8B%E8%AF%95/</url>
-    <content><![CDATA[<p>我是用来测试的~</p>
+    <title>About Me</title>
+    <url>/2020/05/27/About-Me/</url>
+    <content><![CDATA[<p>&lt;!– <img src="/Users/zhangrikui/blog/themes/ayer/source/images/myself.png" alt="myself.png"></p>
+<blockquote>
+<p>一个文艺的 iOS 开发者~</p>
+</blockquote>
 ]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
       <tags>
-        <tag>技术</tag>
+        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
