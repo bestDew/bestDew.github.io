@@ -110,6 +110,8 @@
 
       
       <h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>今年受疫情的影响，工作不太好找。也投了不少简历，只有几家邀面试的：58同城、最右、快手、新东方，除了最右其它都是视频面试。总的来看：公司对个人能力要求还是挺高的，面试问的问题都是由浅入深，算法也是必考的。</p>
+<a id="more"></a>
+
 <h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><p><strong>1、用递归写一个算法，计算从<code>1</code>到<code>100</code>的和。</strong></p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sum</span><span class="params">(value: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> value &lt;= <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> number = value</span><br><span class="line">    <span class="keyword">return</span> value + sum(value: number - <span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 

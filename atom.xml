@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-27T12:33:52.228Z</updated>
+  <updated>2020-05-27T12:56:54.409Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,11 @@
     <link href="http://yoursite.com/2020/05/27/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/"/>
     <id>http://yoursite.com/2020/05/27/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/</id>
     <published>2020-05-27T08:58:17.000Z</published>
-    <updated>2020-05-27T12:33:52.228Z</updated>
+    <updated>2020-05-27T12:56:54.409Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot;
-        
-      
+      &lt;h1 id=&quot;背景&quot;&gt;&lt;a href=&quot;#背景&quot; class=&quot;headerlink&quot; title=&quot;背景&quot;&gt;&lt;/a&gt;背景&lt;/h1&gt;&lt;p&gt;今年受疫情的影响，工作不太好找。也投了不少简历，只有几家邀面试的：58同城、最右、快手、新东方，除了最右其它都是视频面试。总的来看：公司对个人能力要求还是挺高的，面试问的问题都是由浅入深，算法也是必考的。&lt;/p&gt;
     
     </summary>
     
@@ -50,18 +44,13 @@
     <link href="http://yoursite.com/2020/05/27/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/"/>
     <id>http://yoursite.com/2020/05/27/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/</id>
     <published>2020-05-27T07:43:19.000Z</published>
-    <updated>2020-05-27T08:56:52.186Z</updated>
+    <updated>2020-05-27T12:56:40.102Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;单链表反转&quot;&gt;&lt;a href=&quot;#单链表反转&quot; class=&quot;headerlink&quot; title=&quot;单链表反转&quot;&gt;&lt;/a&gt;单链表反转&lt;/h1&gt;&lt;p&gt;单链表的数据结构如下图所示：&lt;/p&gt;
-&lt;p&gt;&lt;img
-        
-      
+      &lt;h1 id=&quot;单链表反转&quot;&gt;&lt;a href=&quot;#单链表反转&quot; class=&quot;headerlink&quot; title=&quot;单链表反转&quot;&gt;&lt;/a&gt;单链表反转&lt;/h1&gt;&lt;p&gt;单链表的数据结构如下图所示：&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;https://pic.downk.cc/item/5ece1b76c2a9a83be57a4624.png&quot; alt=&quot;image.png&quot;&gt;&lt;/p&gt;
+&lt;p&gt;假如有一个单链表是：1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;NULL，那么经过反转后就变为：4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL。&lt;/p&gt;
     
     </summary>
     
