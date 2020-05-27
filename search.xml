@@ -18,6 +18,9 @@
 <p>所以就得到了一个很大的十进制数：<code>18446744073709551615ld</code>。</p>
 <p>到这里问题就搞清楚了。解决办法也很简单，只需要做一次类型转换就可以了：</p>
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NSIteger n &#x3D; array.count - 1;</span><br><span class="line">for (int i &#x3D; 0; i &lt; n; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
       <tags>
         <tag>Objective-C</tag>
         <tag>原理初探</tag>
