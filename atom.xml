@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-27T15:22:51.081Z</updated>
+  <updated>2020-05-27T15:24:38.972Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,18 +21,14 @@
     <link href="http://yoursite.com/2020/05/27/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8ENSUInteger%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/"/>
     <id>http://yoursite.com/2020/05/27/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8ENSUInteger%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</id>
     <published>2020-05-27T14:43:07.000Z</published>
-    <updated>2020-05-27T15:22:51.081Z</updated>
+    <updated>2020-05-27T15:24:38.972Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;h1 id=&quot;先看一段代码：&quot;&gt;&lt;a href=&quot;#先看一段代码：&quot; class=&quot;headerlink&quot; title=&quot;先看一段代码：&quot;&gt;&lt;/a&gt;先看一段代码：&lt;/h1&gt;&lt;p&gt;萌新经常会写出这样的代码：&lt;/p&gt;
-&lt;figure class=&quot;highlight
-        
-      
+      &lt;h1 id=&quot;先看一段代码：&quot;&gt;&lt;a href=&quot;#先看一段代码：&quot; class=&quot;headerlink&quot; title=&quot;先看一段代码：&quot;&gt;&lt;/a&gt;先看一段代码：&lt;/h1&gt;&lt;p&gt;萌新经常会写出这样的代码：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;&amp;#x2F;&amp;#x2F; array 是一个数组，做一个遍历数组的操作&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;for (int i &amp;#x3D; 0; i &amp;lt; array.count - 1; i++) &amp;#123;&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    &amp;#x2F;&amp;#x2F; 一些操作&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;    NSLog(@&amp;quot;123&amp;quot;);&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;&amp;#125;&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;乍一看好像没什么问题啊？其实不然，这里隐藏了一个很大的&lt;code&gt;bug&lt;/code&gt;：当数组&lt;code&gt;array&lt;/code&gt;为空数组时，循环体依然会执行，并且会执行到“天荒地老”。萌新一脸懵逼，甚至有点怀疑人生:joy:。&lt;/p&gt;
     
     </summary>
     

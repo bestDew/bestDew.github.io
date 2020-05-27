@@ -7,6 +7,8 @@
 <figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; array 是一个数组，做一个遍历数组的操作</span><br><span class="line">for (int i &#x3D; 0; i &lt; array.count - 1; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 <p>乍一看好像没什么问题啊？其实不然，这里隐藏了一个很大的<code>bug</code>：当数组<code>array</code>为空数组时，循环体依然会执行，并且会执行到“天荒地老”。萌新一脸懵逼，甚至有点怀疑人生:joy:。</p>
+<a id="more"></a>
+
 <h1 id="为什么会出现这种情况呢？"><a href="#为什么会出现这种情况呢？" class="headerlink" title="为什么会出现这种情况呢？"></a>为什么会出现这种情况呢？</h1><p>让我们一点点分析。</p>
 <p>循环体能够执行说明满足了循环条件，那么问题就出在<code>array.count - 1</code>的身上了。</p>
 <p>点进<code>API</code>文档，可以看到<code>array</code>的<code>count</code>属性返回的是一个<code>NSUInteger</code>类型的值，也就是无符号长整型。当数组元素为空时，我们打印下<code>array.count - 1</code>的值，发现控制台输出：<code>18446744073709551615ld</code>，What？不应该是<code>-1</code>吗？？？</p>
