@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-27T18:05:08.459Z</updated>
+  <updated>2020-05-27T18:06:51.381Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -21,17 +21,14 @@
     <link href="http://yoursite.com/2020/05/28/CocoaPods%E5%8D%87%E7%BA%A7%E5%88%B01-8-%E7%89%88%E6%9C%AC%EF%BC%8C%E6%89%A7%E8%A1%8Cupdate%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/"/>
     <id>http://yoursite.com/2020/05/28/CocoaPods%E5%8D%87%E7%BA%A7%E5%88%B01-8-%E7%89%88%E6%9C%AC%EF%BC%8C%E6%89%A7%E8%A1%8Cupdate%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</id>
     <published>2020-05-27T17:05:57.000Z</published>
-    <updated>2020-05-27T18:05:08.459Z</updated>
+    <updated>2020-05-27T18:06:51.381Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;p&gt;有很多小伙伴的反馈：&lt;code&gt;CocoaPods&lt;/code&gt;在升级&lt;code&gt;1.8+&lt;/code&gt;版本之后，执行&lt;code&gt;search&lt;/code&gt;、&lt;code&gt;install&lt;/code&gt;、&lt;code&gt;update&lt;/code&gt;等操作时会报类似于下面这种错误：&lt;/
-        
-      
+      &lt;p&gt;有很多小伙伴的反馈：&lt;code&gt;CocoaPods&lt;/code&gt;在升级&lt;code&gt;1.8+&lt;/code&gt;版本之后，执行&lt;code&gt;search&lt;/code&gt;、&lt;code&gt;install&lt;/code&gt;、&lt;code&gt;update&lt;/code&gt;等操作时会报类似于下面这种错误：&lt;/p&gt;
+&lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;[!] CDN: trunk Repo update failed - 17 error(s):&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;CDN: trunk URL couldn&amp;#39;t be downloaded: https:&amp;#x2F;&amp;#x2F;raw.githubusercontent.com&amp;#x2F;CocoaPods&amp;#x2F;Specs&amp;#x2F;master&amp;#x2F;Specs&amp;#x2F;1&amp;#x2F;d&amp;#x2F;4&amp;#x2F;CocoaAsyncSocket&amp;#x2F;0.0.1&amp;#x2F;CocoaAsyncSocket.podspec.json, error: Operation timed out - SSL_connect&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;
+
+&lt;p&gt;其实这个是因为：&lt;code&gt;CocoaPods&lt;/code&gt;在&lt;code&gt;1.8&lt;/code&gt;版本之后，把 &lt;a href=&quot;https://baike.baidu.com/item/CDN/420951?fr=aladdin&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;CDN&lt;/a&gt; 被作为&lt;code&gt;spec&lt;/code&gt;的默认仓库来源所导致的。&lt;/p&gt;
     
     </summary>
     
@@ -86,9 +83,9 @@
       <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
     
     
-      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
-    
       <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+      <category term="面试" scheme="http://yoursite.com/tags/%E9%9D%A2%E8%AF%95/"/>
     
       <category term="Swift" scheme="http://yoursite.com/tags/Swift/"/>
     
