@@ -1,6 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title>About Me</title>
+    <url>/2020/05/27/About-Me/</url>
+    <content><![CDATA[<p>坐标：北京</p>
+<p>GitHub：<a href="https://github.com/bestDew" target="_blank" rel="noopener">bestDew</a></p>
+<p>邮箱：<a href="mailto:a_pple0429@163.com">a_pple0429@163.com</a></p>
+<p><img src="https://pic.downk.cc/item/5ece03d2c2a9a83be5594e21.png" alt="avatar.png"></p>
+<blockquote>
+<p>一名文艺的 iOS 开发者~</p>
+</blockquote>
+]]></content>
+      <tags>
+        <tag>随笔</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>最近面试遇到的算法题汇总</title>
     <url>/2020/05/27/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/</url>
     <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>今年受疫情的影响，工作不太好找。也投了不少简历，只有几家邀面试的：58同城、最右、快手、新东方，除了最右其它都是视频面试。总的来看：公司对个人能力要求还是挺高的，面试问的问题都是由浅入深，算法也是必考的。</p>
@@ -28,7 +43,7 @@
 
 
 <p><strong>3.给定一个<code>Int</code>型数组，找出第一个只出现一次的数字。</strong></p>
-<p>分析：可以通过遍历把数组元素存入到字典中，以数组元素的<code>value</code>为字典的<code>key</code>，数组元素的<code>index</code>为字典的<code>value</code>。在遍历过程中，如果遇到重复的<code>key</code>，则更改其<code>value</code>为一个定值（为避免出错，这里设这个定值为数组元素的<code>count</code>）。那么遍历完成后，字典中所有<code>value=count</code>的<code>key</code>即为数组中存在重复的数字，而其它的<code>key</code>（即数组中不存在重复的数字）的<code>value</code>肯定是小于 count的，这时候我们再对字典的 <code>values</code>进行升序排序，设排序后的数组为<code>sort</code>，如果<code>sort</code>中第一个元素的值等于<code>count</code>，说明元素组中不存在只出现一次的数字；否则，<code>sort</code>中的第一个元素即为第一个只出现一次的数字的<code>index</code>。</p>
+<p>分析：可以通过遍历把数组元素存入到字典中，以数组元素的<code>value</code>为字典的<code>key</code>，数组元素的<code>index</code>为字典的<code>value</code>。在遍历过程中，如果遇到重复的<code>key</code>，则更改其<code>value</code>为一个定值（为避免出错，这里设这个定值为数组元素的<code>count</code>）。那么遍历完成后，字典中所有<code>value=count</code>的<code>key</code>即为数组中存在重复的数字，而其它的<code>key</code>（即数组中不存在重复的数字）的<code>value</code>肯定是小于<code>count</code>的，这时候我们再对字典的 <code>values</code>进行升序排序，设排序后的数组为<code>sort</code>，如果<code>sort</code>中第一个元素的值等于<code>count</code>，说明元素组中不存在只出现一次的数字；否则，<code>sort</code>中的第一个元素即为第一个只出现一次的数字的<code>index</code>。</p>
 <figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">findFirstNumberOnlyAppearsOnce</span><span class="params">(<span class="keyword">in</span> nums: [Int])</span></span> -&gt; <span class="type">Int?</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> dict = [<span class="type">Int</span>: <span class="type">Int</span>]()</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">count</span> = nums.<span class="built_in">count</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">for</span> (index, number) <span class="keyword">in</span> nums.enumerated() &#123;</span><br><span class="line">         <span class="keyword">if</span> !dict.keys.<span class="built_in">contains</span>(number) &#123;</span><br><span class="line">             dict[number] = index</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">             dict[number] = <span class="built_in">count</span></span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">        </span><br><span class="line">     <span class="keyword">if</span> <span class="keyword">let</span> result = dict.values.sorted().first &#123;</span><br><span class="line">         <span class="keyword">if</span> result == <span class="built_in">count</span> &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> nums[result]</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
 
@@ -73,21 +88,6 @@
       <tags>
         <tag>算法</tag>
         <tag>C</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>About Me</title>
-    <url>/2020/05/27/About-Me/</url>
-    <content><![CDATA[<p>坐标：北京</p>
-<p>GitHub：<a href="https://github.com/bestDew" target="_blank" rel="noopener">bestDew</a></p>
-<p>邮箱：<a href="mailto:a_pple0429@163.com">a_pple0429@163.com</a></p>
-<p><img src="https://pic.downk.cc/item/5ece03d2c2a9a83be5594e21.png" alt="avatar.png"></p>
-<blockquote>
-<p>一名文艺的 iOS 开发者~</p>
-</blockquote>
-]]></content>
-      <tags>
-        <tag>随笔</tag>
       </tags>
   </entry>
 </search>
