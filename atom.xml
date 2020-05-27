@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2020-05-27T07:05:41.009Z</updated>
+  <updated>2020-05-27T08:25:41.920Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,36 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>单链表反转</title>
+    <link href="http://yoursite.com/2020/05/27/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/"/>
+    <id>http://yoursite.com/2020/05/27/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/</id>
+    <published>2020-05-27T07:43:19.000Z</published>
+    <updated>2020-05-27T08:25:41.920Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;最近在找工作，面试新东方的时候被问到这个问题，这里总结下，免得以后又忘记:joy:。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h1 id=&quot;单链表反转&quot;&gt;&lt;a href=&quot;#单链表反转&quot; class=&quot;headerlink&quot;
+        
+      
+    
+    </summary>
+    
+    
+      <category term="技术" scheme="http://yoursite.com/categories/%E6%8A%80%E6%9C%AF/"/>
+    
+    
+      <category term="算法" scheme="http://yoursite.com/tags/%E7%AE%97%E6%B3%95/"/>
+    
+  </entry>
   
   <entry>
     <title>About Me</title>
