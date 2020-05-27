@@ -43,6 +43,7 @@
       </categories>
       <tags>
         <tag>算法</tag>
+        <tag>面试</tag>
         <tag>Swift</tag>
       </tags>
   </entry>
@@ -90,8 +91,11 @@
 <p>一名文艺的 iOS 开发者~</p>
 </blockquote>
 ]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
       <tags>
-        <tag>随笔</tag>
+        <tag>闲谈</tag>
       </tags>
   </entry>
 </search>
