@@ -1,93 +1,89 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>About Me</title>
-    <url>/2020/05/27/About-Me/</url>
-    <content><![CDATA[<p>坐标：北京</p>
-<p>GitHub：<a href="https://github.com/bestDew" target="_blank" rel="noopener">bestdew</a></p>
-<p>邮箱：<a href="mailto:bestdew@163.com">bestdew@163.com</a></p>
-<p><img src="https://pic.downk.cc/item/5ece03d2c2a9a83be5594e21.png" alt="avatar.png"></p>
-<blockquote>
-<p>一名文艺的 iOS 开发者~</p>
-</blockquote>
+    <title>日报</title>
+    <url>/2020/11/19/work_report/</url>
+    <content><![CDATA[<h1 id="2020年11月18日-星期三"><a href="#2020年11月18日-星期三" class="headerlink" title="2020年11月18日 星期三"></a>2020年11月18日 星期三</h1><h2 id="今日工作："><a href="#今日工作：" class="headerlink" title="今日工作："></a>今日工作：</h2><ol>
+<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1072" target="_blank" rel="noopener">APP-1072 - iOS【约局】信息均正常填写，创建成功未依然停留在创建页面</a> </p>
+</li>
+<li><p>否决bug：<a href="http://123.56.123.64:8080/browse/APP-1077" target="_blank" rel="noopener">APP-1077 - iOS【约局】创建约局输入违规信息点击“创建约局”成功</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1074" target="_blank" rel="noopener">APP-1074 - iOS【约局】创建约局-返回上一页参数配置页添加的信息未保存</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1078" target="_blank" rel="noopener">APP-1078 - iOS【约局】创建约局-收费默认应是免费</a> </p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1076" target="_blank" rel="noopener">APP-1076 - iOS【约局】创建约局-点击收费标准弹出数字键盘</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1079" target="_blank" rel="noopener">APP-1079 - iOS【约局】创建约局-选择8张图片后再次增加，图片未回显到页面</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1070" target="_blank" rel="noopener">APP-1070 - iOS【约局】创建约局-约局介绍，添加图片，相册分类点击无响应</a> </p>
+</li>
+<li><p>否决bug： <a href="http://123.56.123.64:8080/browse/APP-1071" target="_blank" rel="noopener">APP-1071 - iOS【约局】创建约局-活动介绍文字过多时把字数限制遮盖了</a></p>
+</li>
+<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1018" target="_blank" rel="noopener">APP-1018 - iOS【约局】我的发布-缺省页，点击“发布约局”无响应</a> </p>
+</li>
+<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1066" target="_blank" rel="noopener">APP-1066 - iOS【约局】创建约局-约局名称输入空格，下一步状态可点击</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1065" target="_blank" rel="noopener">APP-1065 - iOS【约局】创建约局-缺少创建前须知弹窗</a> </p>
+</li>
+</ol>
+<h2 id="明日计划："><a href="#明日计划：" class="headerlink" title="明日计划："></a>明日计划：</h2><ol>
+<li>清理jira上的bug</li>
+<li>开发圈子模块</li>
+</ol>
 ]]></content>
       <categories>
-        <category>随笔</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>闲谈</tag>
+        <tag>日报</tag>
       </tags>
   </entry>
   <entry>
-    <title>CocoaPods升级到1.8+版本，执行update报错问题</title>
-    <url>/2020/05/28/CocoaPods%E5%8D%87%E7%BA%A7%E5%88%B01-8-%E7%89%88%E6%9C%AC%EF%BC%8C%E6%89%A7%E8%A1%8Cupdate%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>有很多小伙伴的反馈：<code>CocoaPods</code>在升级<code>1.8+</code>版本之后，执行<code>search</code>、<code>install</code>、<code>update</code>等操作时会报类似于下面这种错误：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[!] CDN: trunk Repo update failed - 17 error(s):</span><br><span class="line">CDN: trunk URL couldn&#39;t be downloaded: https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;CocoaPods&#x2F;Specs&#x2F;master&#x2F;Specs&#x2F;1&#x2F;d&#x2F;4&#x2F;CocoaAsyncSocket&#x2F;0.0.1&#x2F;CocoaAsyncSocket.podspec.json, error: Operation timed out - SSL_connect</span><br></pre></td></tr></table></figure>
-
-<p>其实这个是由于：<code>CocoaPods</code>在<code>1.8</code>版本之后，把 <a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 被作为<code>spec</code>的默认仓库来源所导致的。</p>
+    <title>最近面试遇到的算法题汇总</title>
+    <url>/2020/05/27/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/</url>
+    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>今年受疫情的影响，工作不太好找。也投了不少简历，只有几家邀面试的：58同城、最右、快手、新东方，除了最右其它都是视频面试。总的来看：公司对个人能力要求还是挺高的，面试问的问题都是由浅入深，算法也是必考的。</p>
 <a id="more"></a>
 
-<h1 id="什么是CDN-？"><a href="#什么是CDN-？" class="headerlink" title="什么是CDN ？"></a>什么是<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> ？</h1><blockquote>
-<p><a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的全称是 Content Delivery Network，即<a href="https://baike.baidu.com/item/内容分发网络/4034265" target="_blank" rel="noopener">内容分发网络</a>。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>  是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的关键技术主要有内容存储和分发技术。</p>
-</blockquote>
-<p>以上是《百度百科》对于<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的定义。简而言之，<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>是为加快网络访问速度而被优化的网络覆盖层，因此被形象地称为“网络加速器”。</p>
-<h1 id="CocoaPods使用了CDN有什么好处？"><a href="#CocoaPods使用了CDN有什么好处？" class="headerlink" title="CocoaPods使用了CDN有什么好处？"></a>CocoaPods使用了<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>有什么好处？</h1><ul>
-<li><p><strong>1.8版本以前：</strong></p>
-<p><code>pod setup</code>会把 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 的<code>master</code>分支，全量下载到<code>~/.cocoapods/repos/master</code>中，每次<code>pod update</code>都回去更新这个分支，由于这个仓库很大，再加上网络请求本来就慢，常常耗费很长时间。</p>
-</li>
-<li><p><strong>1.8版本以后：</strong></p>
-<p>使用<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>分发，直接找到三方库的<code>spec</code>地址，直接下载。 所以，不再需要全量下载 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 到本地。如果你已经升级到了<code>1.8+</code>版本，<code>repo master</code>就没有用了，终端输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove master</span><br></pre></td></tr></table></figure>
+<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><p><strong>1、用递归写一个算法，计算从<code>1</code>到<code>100</code>的和。</strong></p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sum</span><span class="params">(value: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> value &lt;= <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> number = value</span><br><span class="line">    <span class="keyword">return</span> value + sum(value: number - <span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>清理出宝贵的硬盘空间。</p>
+<p>写完算法之后又围绕着问了几个问题，都是算法基础：</p>
+<ul>
+<li><p>算法的时间复杂度是多少?</p>
+<p>$O(n)$</p>
+</li>
+<li><p>递归会有什么缺点？</p>
+<p>数据规模过大时，容易造成栈溢出。 每一轮递归都要分配栈空间，做栈帧平衡。</p>
+</li>
+<li><p>不用递归能否实现，复杂度能否降到 $O(1)$？</p>
+<p>可以。使用等差数列通项公式：$n*(n+1)/2$。具体实现如下：</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sum</span><span class="params">(n: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> n * (n + <span class="number">1</span>) &gt;&gt; <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
 </li>
 </ul>
-<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>修改<code>hosts</code>文件，添加指定<code>ip</code>。终端输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+<p><strong>2、给定一个<code>Int</code>型数组，用里面的元素组成一个最大数，因为数字可能非常大，用字符串输出。</strong></p>
+<p>分析：实际上就是一个排序而已，只不过它是按高位优先级更高的原则，这一点跟字符串的比较保持一致，如果再加一些<code>Swift</code>的高阶函数，很容易写出来。</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">largestNumber</span><span class="params">(<span class="number">_</span> nums: [Int])</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">sort</span> = nums.<span class="built_in">map</span> &#123;<span class="string">"\($0)"</span>&#125;.sorted &#123;(lStr, rStr) -&gt; <span class="type">Bool</span> <span class="keyword">in</span></span><br><span class="line">        <span class="keyword">return</span> lStr + rStr &gt; rStr + lStr</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="built_in">sort</span>.joined()</span><br><span class="line">    <span class="keyword">if</span> result.<span class="keyword">prefix</span>(<span class="number">1</span>) == <span class="string">"0"</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"0"</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>会要求输入系统密码，之后<code>hosts</code>文件就自动打开了。进入编辑模式，在<code>hosts</code>文件中添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">199.232.4.133 raw.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
-<p>保存退出之后，就可以正常使用<code>CocoaPods</code>了。</p>
-<p>另外，看到很多解决办法是说：在<code>Podfile</code>文件中指定<code>source</code>源：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#39;https:&#x2F;&#x2F;github.com&#x2F;CocoaPods&#x2F;Specs.git&#39;</span><br></pre></td></tr></table></figure>
 
-<p>然后：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove trunk</span><br></pre></td></tr></table></figure>
+<p><strong>3、给定一个<code>Int</code>型数组，找出第一个只出现一次的数字。</strong></p>
+<p>分析：可以通过遍历把数组元素存入到字典中，以数组元素的<code>value</code>为字典的<code>key</code>，数组元素的<code>index</code>为字典的<code>value</code>。在遍历过程中，如果遇到重复的<code>key</code>，则更改其<code>value</code>为一个定值（为避免出错，这里设这个定值为数组元素的<code>count</code>）。那么遍历完成后，字典中所有<code>value=count</code>的<code>key</code>即为数组中存在重复的数字，而其它的<code>key</code>（即数组中不存在重复的数字）的<code>value</code>肯定是小于<code>count</code>的，这时候我们再对字典的 <code>values</code>进行升序排序，设排序后的数组为<code>sort</code>，如果<code>sort</code>中第一个元素的值等于<code>count</code>，说明元素组中不存在只出现一次的数字；否则，<code>sort</code>中的第一个元素即为第一个只出现一次的数字的<code>index</code>。</p>
+<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">findFirstNumberOnlyAppearsOnce</span><span class="params">(<span class="keyword">in</span> nums: [Int])</span></span> -&gt; <span class="type">Int?</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> dict = [<span class="type">Int</span>: <span class="type">Int</span>]()</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">count</span> = nums.<span class="built_in">count</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">for</span> (index, number) <span class="keyword">in</span> nums.enumerated() &#123;</span><br><span class="line">         <span class="keyword">if</span> !dict.keys.<span class="built_in">contains</span>(number) &#123;</span><br><span class="line">             dict[number] = index</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">             dict[number] = <span class="built_in">count</span></span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">        </span><br><span class="line">     <span class="keyword">if</span> <span class="keyword">let</span> result = dict.values.sorted().first &#123;</span><br><span class="line">         <span class="keyword">if</span> result == <span class="built_in">count</span> &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> nums[result]</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
-<p>这种方案虽然可行，但是又回到了老版的方式了，缺点在上面已经说了，除非修改<code>hosts</code>文件的办法不好用了，否则不太建议。</p>
+
+
+<center><求职路艰辛，持续更新中></center>
+
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
-        <tag>CocoaPods</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一个关于NSUInteger的小细节</title>
-    <url>/2020/05/27/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8ENSUInteger%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</url>
-    <content><![CDATA[<h1 id="先看一段代码："><a href="#先看一段代码：" class="headerlink" title="先看一段代码："></a>先看一段代码：</h1><p>萌新经常会写出这样的代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; array 是一个数组，做一个遍历数组的操作</span><br><span class="line">for (int i &#x3D; 0; i &lt; array.count - 1; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>乍一看好像没什么问题啊？其实不然，这里隐藏了一个很大的<code>bug</code>：当数组<code>array</code>为空数组时，循环体依然会执行，并且会执行到“天荒地老”。萌新一脸懵逼，甚至有点怀疑人生:joy:。</p>
-<a id="more"></a>
-
-<h1 id="为什么会出现这种情况呢？"><a href="#为什么会出现这种情况呢？" class="headerlink" title="为什么会出现这种情况呢？"></a>为什么会出现这种情况呢？</h1><p>让我们一点点分析。</p>
-<p>循环体能够执行说明满足了循环条件，那么问题就出在<code>array.count - 1</code>的身上了。</p>
-<p>点进<code>API</code>文档，可以看到<code>array</code>的<code>count</code>属性返回的是一个<code>NSUInteger</code>类型的值，也就是无符号长整型。当数组元素为空时，我们打印下<code>array.count - 1</code>的值，发现控制台输出：<code>18446744073709551615ld</code>，What？不应该是<code>-1</code>吗？？？</p>
-<p>实际上，在计算机中，数字是用“补码”表示的：</p>
-<p>正数的补码 = 原码 = 反码；<br>负数的补码 = 反码 (原码取反，最高位符号位不取反) +1 ；</p>
-<p><code>64</code>位操作系统的下，我们计算下<code>-1</code>的补码：<br>原码：<br><strong>1000 0000 0000 0000 0000 0000 0000 0000</strong><br><strong>0000 0000 0000 0000 0000 0000 0000 0001</strong><br>反码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1110</strong><br>补码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong></p>
-<p>所以就得到了一个很大的十进制数：<code>18446744073709551615ld</code>。</p>
-<p>到这里问题就搞清楚了。解决办法也很简单，只需要做一次类型转换就可以了：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NSIteger n &#x3D; array.count - 1;</span><br><span class="line">for (int i &#x3D; 0; i &lt; n; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Objective-C</tag>
-        <tag>原理初探</tag>
+        <tag>算法</tag>
+        <tag>面试</tag>
+        <tag>Swift</tag>
       </tags>
   </entry>
   <entry>
@@ -121,6 +117,39 @@
       <tags>
         <tag>Objective-C</tag>
         <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>情迷词话，醉韵而不得出</title>
+    <url>/2020/11/19/%E6%83%85%E8%BF%B7%E8%AF%8D%E8%AF%9D%EF%BC%8C%E9%86%89%E9%9F%B5%E8%80%8C%E4%B8%8D%E5%BE%97%E5%87%BA/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>情迷词话，醉韵而不得出。闲来扯几首，以作消遣。</p>
+<a id="more"></a>
+
+<h1 id="诗部："><a href="#诗部：" class="headerlink" title="诗部："></a>诗部：</h1><h2 id="七绝·无题"><a href="#七绝·无题" class="headerlink" title="七绝·无题"></a>七绝·无题</h2><p>碧水东浔杨柳岸，斜阳垂暮晚风清。</p>
+<p>迟归醉客今安在？此处犹闻玉笛声。</p>
+<hr>
+<h2 id="七绝·踏香"><a href="#七绝·踏香" class="headerlink" title="七绝·踏香"></a>七绝·踏香</h2><p>东风不解花千语，吹尽芳菲满沉春。</p>
+<p>如是潇湘应恨我，薄情忍作踏香人。</p>
+<hr>
+<h2 id="七绝·无题（平水韵）"><a href="#七绝·无题（平水韵）" class="headerlink" title="七绝·无题（平水韵）"></a>七绝·无题（平水韵）</h2><p>夜饮相思浸酒家，烛红冷对暗嗟呀。</p>
+<p>瑶浆映碎琉璃月，堪破心花作镜花。</p>
+<h2 id="七绝·次韵和之"><a href="#七绝·次韵和之" class="headerlink" title="七绝·次韵和之"></a>七绝·次韵和之</h2><p>莫把相思寄酒家，深情倦怠枉嗟呀。</p>
+<p>应知易碎壶心月，何故偏摘镜里花。</p>
+<hr>
+<h1 id="词部："><a href="#词部：" class="headerlink" title="词部："></a>词部：</h1><h2 id="长相思"><a href="#长相思" class="headerlink" title="长相思"></a>长相思</h2><p>倚画楼，忆画楼，疏雨梧桐点点愁。春心付晚秋。</p>
+<p>泪难收，恨难收，未梦佳期情已休。誓言空白头。</p>
+<h2 id="青玉案·清明"><a href="#青玉案·清明" class="headerlink" title="青玉案·清明"></a>青玉案·清明</h2><p>清明雨湿青塘路，看燕子，双飞去。</p>
+<p>衔泥还巢曾几度。</p>
+<p>画桥烟柳，诗亭水户，正是春归处。</p>
+<p>娇风款款催天暮，独赋新词景成句。</p>
+<p>若问闲情都几许？</p>
+<p>一蓑一笠，轻舟作侣，同渡西湖雨。</p>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>诗词</tag>
       </tags>
   </entry>
   <entry>
@@ -277,122 +306,93 @@
       </tags>
   </entry>
   <entry>
-    <title>最近面试遇到的算法题汇总</title>
-    <url>/2020/05/27/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/</url>
-    <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>今年受疫情的影响，工作不太好找。也投了不少简历，只有几家邀面试的：58同城、最右、快手、新东方，除了最右其它都是视频面试。总的来看：公司对个人能力要求还是挺高的，面试问的问题都是由浅入深，算法也是必考的。</p>
+    <title>CocoaPods升级到1.8+版本，执行update报错问题</title>
+    <url>/2020/05/28/CocoaPods%E5%8D%87%E7%BA%A7%E5%88%B01-8-%E7%89%88%E6%9C%AC%EF%BC%8C%E6%89%A7%E8%A1%8Cupdate%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>有很多小伙伴的反馈：<code>CocoaPods</code>在升级<code>1.8+</code>版本之后，执行<code>search</code>、<code>install</code>、<code>update</code>等操作时会报类似于下面这种错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[!] CDN: trunk Repo update failed - 17 error(s):</span><br><span class="line">CDN: trunk URL couldn&#39;t be downloaded: https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;CocoaPods&#x2F;Specs&#x2F;master&#x2F;Specs&#x2F;1&#x2F;d&#x2F;4&#x2F;CocoaAsyncSocket&#x2F;0.0.1&#x2F;CocoaAsyncSocket.podspec.json, error: Operation timed out - SSL_connect</span><br></pre></td></tr></table></figure>
+
+<p>其实这个是由于：<code>CocoaPods</code>在<code>1.8</code>版本之后，把 <a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 被作为<code>spec</code>的默认仓库来源所导致的。</p>
 <a id="more"></a>
 
-<h1 id="算法"><a href="#算法" class="headerlink" title="算法"></a>算法</h1><p><strong>1、用递归写一个算法，计算从<code>1</code>到<code>100</code>的和。</strong></p>
-<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sum</span><span class="params">(value: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> value &lt;= <span class="number">0</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> number = value</span><br><span class="line">    <span class="keyword">return</span> value + sum(value: number - <span class="number">1</span>)</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>写完算法之后又围绕着问了几个问题，都是算法基础：</p>
-<ul>
-<li><p>算法的时间复杂度是多少?</p>
-<p>$O(n)$</p>
+<h1 id="什么是CDN-？"><a href="#什么是CDN-？" class="headerlink" title="什么是CDN ？"></a>什么是<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> ？</h1><blockquote>
+<p><a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的全称是 Content Delivery Network，即<a href="https://baike.baidu.com/item/内容分发网络/4034265" target="_blank" rel="noopener">内容分发网络</a>。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>  是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的关键技术主要有内容存储和分发技术。</p>
+</blockquote>
+<p>以上是《百度百科》对于<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的定义。简而言之，<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>是为加快网络访问速度而被优化的网络覆盖层，因此被形象地称为“网络加速器”。</p>
+<h1 id="CocoaPods使用了CDN有什么好处？"><a href="#CocoaPods使用了CDN有什么好处？" class="headerlink" title="CocoaPods使用了CDN有什么好处？"></a>CocoaPods使用了<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>有什么好处？</h1><ul>
+<li><p><strong>1.8版本以前：</strong></p>
+<p><code>pod setup</code>会把 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 的<code>master</code>分支，全量下载到<code>~/.cocoapods/repos/master</code>中，每次<code>pod update</code>都回去更新这个分支，由于这个仓库很大，再加上网络请求本来就慢，常常耗费很长时间。</p>
 </li>
-<li><p>递归会有什么缺点？</p>
-<p>数据规模过大时，容易造成栈溢出。 每一轮递归都要分配栈空间，做栈帧平衡。</p>
-</li>
-<li><p>不用递归能否实现，复杂度能否降到 $O(1)$？</p>
-<p>可以。使用等差数列通项公式：$n*(n+1)/2$。具体实现如下：</p>
-<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">sum</span><span class="params">(n: Int)</span></span> -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">    <span class="keyword">return</span> n * (n + <span class="number">1</span>) &gt;&gt; <span class="number">1</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<li><p><strong>1.8版本以后：</strong></p>
+<p>使用<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>分发，直接找到三方库的<code>spec</code>地址，直接下载。 所以，不再需要全量下载 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 到本地。如果你已经升级到了<code>1.8+</code>版本，<code>repo master</code>就没有用了，终端输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove master</span><br></pre></td></tr></table></figure>
 
+<p>清理出宝贵的硬盘空间。</p>
 </li>
 </ul>
-<p><strong>2、给定一个<code>Int</code>型数组，用里面的元素组成一个最大数，因为数字可能非常大，用字符串输出。</strong></p>
-<p>分析：实际上就是一个排序而已，只不过它是按高位优先级更高的原则，这一点跟字符串的比较保持一致，如果再加一些<code>Swift</code>的高阶函数，很容易写出来。</p>
-<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">largestNumber</span><span class="params">(<span class="number">_</span> nums: [Int])</span></span> -&gt; <span class="type">String</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">sort</span> = nums.<span class="built_in">map</span> &#123;<span class="string">"\($0)"</span>&#125;.sorted &#123;(lStr, rStr) -&gt; <span class="type">Bool</span> <span class="keyword">in</span></span><br><span class="line">        <span class="keyword">return</span> lStr + rStr &gt; rStr + lStr</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">let</span> result = <span class="built_in">sort</span>.joined()</span><br><span class="line">    <span class="keyword">if</span> result.<span class="keyword">prefix</span>(<span class="number">1</span>) == <span class="string">"0"</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="string">"0"</span></span><br><span class="line">    &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">        <span class="keyword">return</span> result</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>修改<code>hosts</code>文件，添加指定<code>ip</code>。终端输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
 
+<p>会要求输入系统密码，之后<code>hosts</code>文件就自动打开了。进入编辑模式，在<code>hosts</code>文件中添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">199.232.4.133 raw.githubusercontent.com</span><br></pre></td></tr></table></figure>
 
+<p>保存退出之后，就可以正常使用<code>CocoaPods</code>了。</p>
+<p>另外，看到很多解决办法是说：在<code>Podfile</code>文件中指定<code>source</code>源：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#39;https:&#x2F;&#x2F;github.com&#x2F;CocoaPods&#x2F;Specs.git&#39;</span><br></pre></td></tr></table></figure>
 
-<p><strong>3、给定一个<code>Int</code>型数组，找出第一个只出现一次的数字。</strong></p>
-<p>分析：可以通过遍历把数组元素存入到字典中，以数组元素的<code>value</code>为字典的<code>key</code>，数组元素的<code>index</code>为字典的<code>value</code>。在遍历过程中，如果遇到重复的<code>key</code>，则更改其<code>value</code>为一个定值（为避免出错，这里设这个定值为数组元素的<code>count</code>）。那么遍历完成后，字典中所有<code>value=count</code>的<code>key</code>即为数组中存在重复的数字，而其它的<code>key</code>（即数组中不存在重复的数字）的<code>value</code>肯定是小于<code>count</code>的，这时候我们再对字典的 <code>values</code>进行升序排序，设排序后的数组为<code>sort</code>，如果<code>sort</code>中第一个元素的值等于<code>count</code>，说明元素组中不存在只出现一次的数字；否则，<code>sort</code>中的第一个元素即为第一个只出现一次的数字的<code>index</code>。</p>
-<figure class="highlight swift"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">func</span> <span class="title">findFirstNumberOnlyAppearsOnce</span><span class="params">(<span class="keyword">in</span> nums: [Int])</span></span> -&gt; <span class="type">Int?</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> dict = [<span class="type">Int</span>: <span class="type">Int</span>]()</span><br><span class="line">    <span class="keyword">let</span> <span class="built_in">count</span> = nums.<span class="built_in">count</span></span><br><span class="line">        </span><br><span class="line">    <span class="keyword">for</span> (index, number) <span class="keyword">in</span> nums.enumerated() &#123;</span><br><span class="line">         <span class="keyword">if</span> !dict.keys.<span class="built_in">contains</span>(number) &#123;</span><br><span class="line">             dict[number] = index</span><br><span class="line">         &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">             dict[number] = <span class="built_in">count</span></span><br><span class="line">         &#125;</span><br><span class="line">     &#125;</span><br><span class="line">        </span><br><span class="line">     <span class="keyword">if</span> <span class="keyword">let</span> result = dict.values.sorted().first &#123;</span><br><span class="line">         <span class="keyword">if</span> result == <span class="built_in">count</span> &#123;</span><br><span class="line">             <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">         &#125;</span><br><span class="line">         <span class="keyword">return</span> nums[result]</span><br><span class="line">     &#125;</span><br><span class="line">     <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p>然后：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove trunk</span><br></pre></td></tr></table></figure>
 
-
-
-<center><求职路艰辛，持续更新中></center>
-
+<p>这种方案虽然可行，但是又回到了老版的方式了，缺点在上面已经说了，除非修改<code>hosts</code>文件的办法不好用了，否则不太建议。</p>
 ]]></content>
       <categories>
         <category>技术</category>
       </categories>
       <tags>
-        <tag>算法</tag>
-        <tag>面试</tag>
-        <tag>Swift</tag>
+        <tag>CocoaPods</tag>
       </tags>
   </entry>
   <entry>
-    <title>日报</title>
-    <url>/2020/11/19/work_report/</url>
-    <content><![CDATA[<h1 id="2020年11月18日-星期三"><a href="#2020年11月18日-星期三" class="headerlink" title="2020年11月18日 星期三"></a>2020年11月18日 星期三</h1><h2 id="今日工作："><a href="#今日工作：" class="headerlink" title="今日工作："></a>今日工作：</h2><ol>
-<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1072" target="_blank" rel="noopener">APP-1072 - iOS【约局】信息均正常填写，创建成功未依然停留在创建页面</a> </p>
-</li>
-<li><p>否决bug：<a href="http://123.56.123.64:8080/browse/APP-1077" target="_blank" rel="noopener">APP-1077 - iOS【约局】创建约局输入违规信息点击“创建约局”成功</a></p>
-</li>
-<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1074" target="_blank" rel="noopener">APP-1074 - iOS【约局】创建约局-返回上一页参数配置页添加的信息未保存</a></p>
-</li>
-<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1078" target="_blank" rel="noopener">APP-1078 - iOS【约局】创建约局-收费默认应是免费</a> </p>
-</li>
-<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1076" target="_blank" rel="noopener">APP-1076 - iOS【约局】创建约局-点击收费标准弹出数字键盘</a></p>
-</li>
-<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1079" target="_blank" rel="noopener">APP-1079 - iOS【约局】创建约局-选择8张图片后再次增加，图片未回显到页面</a></p>
-</li>
-<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1070" target="_blank" rel="noopener">APP-1070 - iOS【约局】创建约局-约局介绍，添加图片，相册分类点击无响应</a> </p>
-</li>
-<li><p>否决bug： <a href="http://123.56.123.64:8080/browse/APP-1071" target="_blank" rel="noopener">APP-1071 - iOS【约局】创建约局-活动介绍文字过多时把字数限制遮盖了</a></p>
-</li>
-<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1018" target="_blank" rel="noopener">APP-1018 - iOS【约局】我的发布-缺省页，点击“发布约局”无响应</a> </p>
-</li>
-<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1066" target="_blank" rel="noopener">APP-1066 - iOS【约局】创建约局-约局名称输入空格，下一步状态可点击</a></p>
-</li>
-<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1065" target="_blank" rel="noopener">APP-1065 - iOS【约局】创建约局-缺少创建前须知弹窗</a> </p>
-</li>
-</ol>
-<h2 id="明日计划："><a href="#明日计划：" class="headerlink" title="明日计划："></a>明日计划：</h2><ol>
-<li>清理jira上的bug</li>
-<li>开发圈子模块</li>
-</ol>
-]]></content>
-      <categories>
-        <category>工作</category>
-      </categories>
-      <tags>
-        <tag>日报</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>情迷词话，醉韵而不得出</title>
-    <url>/2020/11/19/%E6%83%85%E8%BF%B7%E8%AF%8D%E8%AF%9D%EF%BC%8C%E9%86%89%E9%9F%B5%E8%80%8C%E4%B8%8D%E5%BE%97%E5%87%BA/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>情迷词话，醉韵而不得出。闲来扯几首，以作消遣。</p>
+    <title>一个关于NSUInteger的小细节</title>
+    <url>/2020/05/27/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8ENSUInteger%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</url>
+    <content><![CDATA[<h1 id="先看一段代码："><a href="#先看一段代码：" class="headerlink" title="先看一段代码："></a>先看一段代码：</h1><p>萌新经常会写出这样的代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; array 是一个数组，做一个遍历数组的操作</span><br><span class="line">for (int i &#x3D; 0; i &lt; array.count - 1; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>乍一看好像没什么问题啊？其实不然，这里隐藏了一个很大的<code>bug</code>：当数组<code>array</code>为空数组时，循环体依然会执行，并且会执行到“天荒地老”。萌新一脸懵逼，甚至有点怀疑人生:joy:。</p>
 <a id="more"></a>
 
-<h1 id="诗部："><a href="#诗部：" class="headerlink" title="诗部："></a>诗部：</h1><h2 id="七绝·无题"><a href="#七绝·无题" class="headerlink" title="七绝·无题"></a>七绝·无题</h2><p>碧水东浔杨柳岸，斜阳垂暮晚风清。</p>
-<p>迟归醉客今安在？此处犹闻玉笛声。</p>
-<hr>
-<h2 id="七绝·踏香"><a href="#七绝·踏香" class="headerlink" title="七绝·踏香"></a>七绝·踏香</h2><p>东风不解花千语，吹尽芳菲满暮春。</p>
-<p>如是潇湘应恨我，薄情忍作踏香人。</p>
-<hr>
-<h2 id="七绝·无题（平水韵）"><a href="#七绝·无题（平水韵）" class="headerlink" title="七绝·无题（平水韵）"></a>七绝·无题（平水韵）</h2><p>夜饮相思浸酒家，烛红冷对暗嗟呀。</p>
-<p>瑶浆映碎琉璃月，堪破心花作镜花。</p>
-<h2 id="七绝·次韵和之"><a href="#七绝·次韵和之" class="headerlink" title="七绝·次韵和之"></a>七绝·次韵和之</h2><p>莫把相思寄酒家，深情倦怠枉嗟呀。</p>
-<p>应知易碎壶心月，何故偏摘镜里花。</p>
-<hr>
-<h1 id="词部："><a href="#词部：" class="headerlink" title="词部："></a>词部：</h1><h2 id="长相思"><a href="#长相思" class="headerlink" title="长相思"></a>长相思</h2><p>倚画楼，忆画楼，疏雨梧桐点点愁。春心付晚秋。</p>
-<p>泪难收，恨难收，未梦佳期情已休。誓言空白头。</p>
-<h2 id="青玉案·清明"><a href="#青玉案·清明" class="headerlink" title="青玉案·清明"></a>青玉案·清明</h2><p>清明雨湿青塘路，看燕子，双飞去。</p>
-<p>衔泥还巢曾几度。</p>
-<p>画桥烟柳，诗亭水户，正是春归处。</p>
-<p>娇风款款催天暮，独赋新词景成句。</p>
-<p>若问闲情都几许？</p>
-<p>一蓑一笠，轻舟作侣，同渡西湖雨。</p>
+<h1 id="为什么会出现这种情况呢？"><a href="#为什么会出现这种情况呢？" class="headerlink" title="为什么会出现这种情况呢？"></a>为什么会出现这种情况呢？</h1><p>让我们一点点分析。</p>
+<p>循环体能够执行说明满足了循环条件，那么问题就出在<code>array.count - 1</code>的身上了。</p>
+<p>点进<code>API</code>文档，可以看到<code>array</code>的<code>count</code>属性返回的是一个<code>NSUInteger</code>类型的值，也就是无符号长整型。当数组元素为空时，我们打印下<code>array.count - 1</code>的值，发现控制台输出：<code>18446744073709551615ld</code>，What？不应该是<code>-1</code>吗？？？</p>
+<p>实际上，在计算机中，数字是用“补码”表示的：</p>
+<p>正数的补码 = 原码 = 反码；<br>负数的补码 = 反码 (原码取反，最高位符号位不取反) +1 ；</p>
+<p><code>64</code>位操作系统的下，我们计算下<code>-1</code>的补码：<br>原码：<br><strong>1000 0000 0000 0000 0000 0000 0000 0000</strong><br><strong>0000 0000 0000 0000 0000 0000 0000 0001</strong><br>反码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1110</strong><br>补码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong></p>
+<p>所以就得到了一个很大的十进制数：<code>18446744073709551615ld</code>。</p>
+<p>到这里问题就搞清楚了。解决办法也很简单，只需要做一次类型转换就可以了：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NSIteger n &#x3D; array.count - 1;</span><br><span class="line">for (int i &#x3D; 0; i &lt; n; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Objective-C</tag>
+        <tag>原理初探</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>About Me</title>
+    <url>/2020/05/27/About-Me/</url>
+    <content><![CDATA[<p>坐标：北京</p>
+<p>GitHub：<a href="https://github.com/bestDew" target="_blank" rel="noopener">bestdew</a></p>
+<p>邮箱：<a href="mailto:bestdew@163.com">bestdew@163.com</a></p>
+<p><img src="https://pic.downk.cc/item/5ece03d2c2a9a83be5594e21.png" alt="avatar.png"></p>
+<blockquote>
+<p>一名文艺的 iOS 开发者~</p>
+</blockquote>
 ]]></content>
       <categories>
         <category>随笔</category>
       </categories>
       <tags>
-        <tag>诗词</tag>
+        <tag>闲谈</tag>
       </tags>
   </entry>
 </search>
