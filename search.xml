@@ -1,126 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title>About Me</title>
-    <url>/2020/05/27/About-Me/</url>
-    <content><![CDATA[<p>坐标：北京</p>
-<p>GitHub：<a href="https://github.com/bestDew" target="_blank" rel="noopener">bestDew</a></p>
-<p>邮箱：<a href="mailto:a_pple0429@163.com">a_pple0429@163.com</a></p>
-<p><img src="https://pic.downk.cc/item/5ece03d2c2a9a83be5594e21.png" alt="avatar.png"></p>
-<blockquote>
-<p>一名文艺的 iOS 开发者~</p>
-</blockquote>
+    <title>日报</title>
+    <url>/2020/11/19/%E6%97%A5%E6%8A%A5/</url>
+    <content><![CDATA[<h1 id="2020年11月18日-星期三"><a href="#2020年11月18日-星期三" class="headerlink" title="2020年11月18日 星期三"></a>2020年11月18日 星期三</h1><h2 id="今日工作："><a href="#今日工作：" class="headerlink" title="今日工作："></a>今日工作：</h2><ol>
+<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1072" target="_blank" rel="noopener">APP-1072 - iOS【约局】信息均正常填写，创建成功未依然停留在创建页面</a> </p>
+</li>
+<li><p>否决bug：<a href="http://123.56.123.64:8080/browse/APP-1077" target="_blank" rel="noopener">APP-1077 - iOS【约局】创建约局输入违规信息点击“创建约局”成功</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1074" target="_blank" rel="noopener">APP-1074 - iOS【约局】创建约局-返回上一页参数配置页添加的信息未保存</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1078" target="_blank" rel="noopener">APP-1078 - iOS【约局】创建约局-收费默认应是免费</a> </p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1076" target="_blank" rel="noopener">APP-1076 - iOS【约局】创建约局-点击收费标准弹出数字键盘</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1079" target="_blank" rel="noopener">APP-1079 - iOS【约局】创建约局-选择8张图片后再次增加，图片未回显到页面</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1070" target="_blank" rel="noopener">APP-1070 - iOS【约局】创建约局-约局介绍，添加图片，相册分类点击无响应</a> </p>
+</li>
+<li><p>否决bug： <a href="http://123.56.123.64:8080/browse/APP-1071" target="_blank" rel="noopener">APP-1071 - iOS【约局】创建约局-活动介绍文字过多时把字数限制遮盖了</a></p>
+</li>
+<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1018" target="_blank" rel="noopener">APP-1018 - iOS【约局】我的发布-缺省页，点击“发布约局”无响应</a> </p>
+</li>
+<li><p>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1066" target="_blank" rel="noopener">APP-1066 - iOS【约局】创建约局-约局名称输入空格，下一步状态可点击</a></p>
+</li>
+<li><p>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1065" target="_blank" rel="noopener">APP-1065 - iOS【约局】创建约局-缺少创建前须知弹窗</a> </p>
+</li>
+</ol>
+<h2 id="明日计划："><a href="#明日计划：" class="headerlink" title="明日计划："></a>明日计划：</h2><ol>
+<li>清理jira上的bug</li>
+<li>开发圈子模块</li>
+</ol>
 ]]></content>
       <categories>
-        <category>随笔</category>
+        <category>工作</category>
       </categories>
       <tags>
-        <tag>闲谈</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>CocoaPods升级到1.8+版本，执行update报错问题</title>
-    <url>/2020/05/28/CocoaPods%E5%8D%87%E7%BA%A7%E5%88%B01-8-%E7%89%88%E6%9C%AC%EF%BC%8C%E6%89%A7%E8%A1%8Cupdate%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</url>
-    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>有很多小伙伴的反馈：<code>CocoaPods</code>在升级<code>1.8+</code>版本之后，执行<code>search</code>、<code>install</code>、<code>update</code>等操作时会报类似于下面这种错误：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[!] CDN: trunk Repo update failed - 17 error(s):</span><br><span class="line">CDN: trunk URL couldn&#39;t be downloaded: https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;CocoaPods&#x2F;Specs&#x2F;master&#x2F;Specs&#x2F;1&#x2F;d&#x2F;4&#x2F;CocoaAsyncSocket&#x2F;0.0.1&#x2F;CocoaAsyncSocket.podspec.json, error: Operation timed out - SSL_connect</span><br></pre></td></tr></table></figure>
-
-<p>其实这个是由于：<code>CocoaPods</code>在<code>1.8</code>版本之后，把 <a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 被作为<code>spec</code>的默认仓库来源所导致的。</p>
-<a id="more"></a>
-
-<h1 id="什么是CDN-？"><a href="#什么是CDN-？" class="headerlink" title="什么是CDN ？"></a>什么是<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> ？</h1><blockquote>
-<p><a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的全称是 Content Delivery Network，即<a href="https://baike.baidu.com/item/内容分发网络/4034265" target="_blank" rel="noopener">内容分发网络</a>。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>  是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的关键技术主要有内容存储和分发技术。</p>
-</blockquote>
-<p>以上是《百度百科》对于<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的定义。简而言之，<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>是为加快网络访问速度而被优化的网络覆盖层，因此被形象地称为“网络加速器”。</p>
-<h1 id="CocoaPods使用了CDN有什么好处？"><a href="#CocoaPods使用了CDN有什么好处？" class="headerlink" title="CocoaPods使用了CDN有什么好处？"></a>CocoaPods使用了<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>有什么好处？</h1><ul>
-<li><p><strong>1.8版本以前：</strong></p>
-<p><code>pod setup</code>会把 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 的<code>master</code>分支，全量下载到<code>~/.cocoapods/repos/master</code>中，每次<code>pod update</code>都回去更新这个分支，由于这个仓库很大，再加上网络请求本来就慢，常常耗费很长时间。</p>
-</li>
-<li><p><strong>1.8版本以后：</strong></p>
-<p>使用<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>分发，直接找到三方库的<code>spec</code>地址，直接下载。 所以，不再需要全量下载 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 到本地。如果你已经升级到了<code>1.8+</code>版本，<code>repo master</code>就没有用了，终端输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove master</span><br></pre></td></tr></table></figure>
-
-<p>清理出宝贵的硬盘空间。</p>
-</li>
-</ul>
-<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>修改<code>hosts</code>文件，添加指定<code>ip</code>。终端输入：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
-
-<p>会要求输入系统密码，之后<code>hosts</code>文件就自动打开了。进入编辑模式，在<code>hosts</code>文件中添加：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">199.232.4.133 raw.githubusercontent.com</span><br></pre></td></tr></table></figure>
-
-<p>保存退出之后，就可以正常使用<code>CocoaPods</code>了。</p>
-<p>另外，看到很多解决办法是说：在<code>Podfile</code>文件中指定<code>source</code>源：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#39;https:&#x2F;&#x2F;github.com&#x2F;CocoaPods&#x2F;Specs.git&#39;</span><br></pre></td></tr></table></figure>
-
-<p>然后：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove trunk</span><br></pre></td></tr></table></figure>
-
-<p>这种方案虽然可行，但是又回到了老版的方式了，缺点在上面已经说了，除非修改<code>hosts</code>文件的办法不好用了，否则不太建议。</p>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>CocoaPods</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>一个关于NSUInteger的小细节</title>
-    <url>/2020/05/27/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8ENSUInteger%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</url>
-    <content><![CDATA[<h1 id="先看一段代码："><a href="#先看一段代码：" class="headerlink" title="先看一段代码："></a>先看一段代码：</h1><p>萌新经常会写出这样的代码：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; array 是一个数组，做一个遍历数组的操作</span><br><span class="line">for (int i &#x3D; 0; i &lt; array.count - 1; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>乍一看好像没什么问题啊？其实不然，这里隐藏了一个很大的<code>bug</code>：当数组<code>array</code>为空数组时，循环体依然会执行，并且会执行到“天荒地老”。萌新一脸懵逼，甚至有点怀疑人生:joy:。</p>
-<a id="more"></a>
-
-<h1 id="为什么会出现这种情况呢？"><a href="#为什么会出现这种情况呢？" class="headerlink" title="为什么会出现这种情况呢？"></a>为什么会出现这种情况呢？</h1><p>让我们一点点分析。</p>
-<p>循环体能够执行说明满足了循环条件，那么问题就出在<code>array.count - 1</code>的身上了。</p>
-<p>点进<code>API</code>文档，可以看到<code>array</code>的<code>count</code>属性返回的是一个<code>NSUInteger</code>类型的值，也就是无符号长整型。当数组元素为空时，我们打印下<code>array.count - 1</code>的值，发现控制台输出：<code>18446744073709551615ld</code>，What？不应该是<code>-1</code>吗？？？</p>
-<p>实际上，在计算机中，数字是用“补码”表示的：</p>
-<p>正数的补码 = 原码 = 反码；<br>负数的补码 = 反码 (原码取反，最高位符号位不取反) +1 ；</p>
-<p><code>64</code>位操作系统的下，我们计算下<code>-1</code>的补码：<br>原码：<br><strong>1000 0000 0000 0000 0000 0000 0000 0000</strong><br><strong>0000 0000 0000 0000 0000 0000 0000 0001</strong><br>反码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1110</strong><br>补码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong></p>
-<p>所以就得到了一个很大的十进制数：<code>18446744073709551615ld</code>。</p>
-<p>到这里问题就搞清楚了。解决办法也很简单，只需要做一次类型转换就可以了：</p>
-<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NSIteger n &#x3D; array.count - 1;</span><br><span class="line">for (int i &#x3D; 0; i &lt; n; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Objective-C</tag>
-        <tag>原理初探</tag>
-      </tags>
-  </entry>
-  <entry>
-    <title>单链表反转</title>
-    <url>/2020/05/27/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/</url>
-    <content><![CDATA[<h1 id="单链表反转"><a href="#单链表反转" class="headerlink" title="单链表反转"></a>单链表反转</h1><p>单链表的数据结构如下图所示：</p>
-<p><img src="https://pic.downk.cc/item/5ece1b76c2a9a83be57a4624.png" alt="image.png"></p>
-<p>假如有一个单链表是：1-&gt;2-&gt;3-&gt;4-&gt;NULL，那么经过反转后就变为：4-&gt;3-&gt;2-&gt;1-&gt;NULL。</p>
-<a id="more"></a>
-
-<h1 id="具体代码实现"><a href="#具体代码实现" class="headerlink" title="具体代码实现"></a>具体代码实现</h1><ul>
-<li><p>定义单链表</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>构造单链表</p>
-<p>构造单链表的思想就是：创建一个节点，然后判断是否有头结点，如果有，就将当前节点的<code>next</code>指向新创建的节点，然后将当前节点向后移动；如果没有，就将头结点和当前节点都赋值为新创建的节点。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">struct Node* <span class="title">constructList</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义头部节点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">head</span> = <span class="title">NULL</span>;</span></span><br><span class="line">    <span class="comment">// 记录当前结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">cur</span> = <span class="title">NULL</span>;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">node</span> = <span class="title">malloc</span>(<span class="title">sizeof</span>(<span class="title">struct</span> <span class="title">Node</span>));</span></span><br><span class="line">        node-&gt;data = i;</span><br><span class="line">        node-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="comment">// 头结点为空，当前节点为头结点</span></span><br><span class="line">            head = node;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 当前节点的 next 为新节点</span></span><br><span class="line">            cur-&gt;next = node;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 设置当前节点</span></span><br><span class="line">        cur = node;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> head;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>链表反转（头插法）</p>
-<p>头插法需要我们定义一个新的头结点作为新的链表，然后利用头插法，将原来的链表的每一个节点取出来，然后去新的链表里面做头插法，这样就可以反转了，这里需要一个新的头结点，和遍历原来链表的一个<code>p</code>指针。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">struct Node* <span class="title">reverseList</span><span class="params">(struct Node *head)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义一个遍历指针，并初始化为头结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">p</span> = <span class="title">head</span>;</span></span><br><span class="line">    <span class="comment">// 反转后的头结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">newH</span> = <span class="title">NULL</span>;</span></span><br><span class="line">    <span class="comment">// 遍历链表</span></span><br><span class="line">    <span class="keyword">while</span> (p != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="comment">// 记录下一个节点</span></span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">temp</span> = <span class="title">p</span>-&gt;<span class="title">next</span>;</span></span><br><span class="line">        <span class="comment">// 当前节点的 next 指向新链表头部</span></span><br><span class="line">        p-&gt;next = newH;</span><br><span class="line">        <span class="comment">// 更改新链表头部为当前节点</span></span><br><span class="line">        newH = p;</span><br><span class="line">        <span class="comment">// 移动 p 指针</span></span><br><span class="line">        p = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> newH;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>打印链表数据</p>
-<p>最后，我们打印下链表数据，看下效果。</p>
-<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">printList</span><span class="params">(struct Node *node)</span> </span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">temp</span> = <span class="title">node</span>;</span></span><br><span class="line">    <span class="keyword">while</span> (temp != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"node is %d \n"</span>, temp-&gt;data);</span><br><span class="line">        temp = temp-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
-</ul>
-]]></content>
-      <categories>
-        <category>技术</category>
-      </categories>
-      <tags>
-        <tag>Objective-C</tag>
-        <tag>算法</tag>
+        <tag>日报</tag>
       </tags>
   </entry>
   <entry>
@@ -277,6 +193,78 @@
       </tags>
   </entry>
   <entry>
+    <title>CocoaPods升级到1.8+版本，执行update报错问题</title>
+    <url>/2020/05/28/CocoaPods%E5%8D%87%E7%BA%A7%E5%88%B01-8-%E7%89%88%E6%9C%AC%EF%BC%8C%E6%89%A7%E8%A1%8Cupdate%E6%8A%A5%E9%94%99%E9%97%AE%E9%A2%98/</url>
+    <content><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>有很多小伙伴的反馈：<code>CocoaPods</code>在升级<code>1.8+</code>版本之后，执行<code>search</code>、<code>install</code>、<code>update</code>等操作时会报类似于下面这种错误：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">[!] CDN: trunk Repo update failed - 17 error(s):</span><br><span class="line">CDN: trunk URL couldn&#39;t be downloaded: https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;CocoaPods&#x2F;Specs&#x2F;master&#x2F;Specs&#x2F;1&#x2F;d&#x2F;4&#x2F;CocoaAsyncSocket&#x2F;0.0.1&#x2F;CocoaAsyncSocket.podspec.json, error: Operation timed out - SSL_connect</span><br></pre></td></tr></table></figure>
+
+<p>其实这个是由于：<code>CocoaPods</code>在<code>1.8</code>版本之后，把 <a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 被作为<code>spec</code>的默认仓库来源所导致的。</p>
+<a id="more"></a>
+
+<h1 id="什么是CDN-？"><a href="#什么是CDN-？" class="headerlink" title="什么是CDN ？"></a>什么是<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> ？</h1><blockquote>
+<p><a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的全称是 Content Delivery Network，即<a href="https://baike.baidu.com/item/内容分发网络/4034265" target="_blank" rel="noopener">内容分发网络</a>。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>  是构建在现有网络基础之上的智能虚拟网络，依靠部署在各地的边缘服务器，通过中心平台的负载均衡、内容分发、调度等功能模块，使用户就近获取所需内容，降低网络拥塞，提高用户访问响应速度和命中率。<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的关键技术主要有内容存储和分发技术。</p>
+</blockquote>
+<p>以上是《百度百科》对于<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a> 的定义。简而言之，<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>是为加快网络访问速度而被优化的网络覆盖层，因此被形象地称为“网络加速器”。</p>
+<h1 id="CocoaPods使用了CDN有什么好处？"><a href="#CocoaPods使用了CDN有什么好处？" class="headerlink" title="CocoaPods使用了CDN有什么好处？"></a>CocoaPods使用了<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>有什么好处？</h1><ul>
+<li><p><strong>1.8版本以前：</strong></p>
+<p><code>pod setup</code>会把 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 的<code>master</code>分支，全量下载到<code>~/.cocoapods/repos/master</code>中，每次<code>pod update</code>都回去更新这个分支，由于这个仓库很大，再加上网络请求本来就慢，常常耗费很长时间。</p>
+</li>
+<li><p><strong>1.8版本以后：</strong></p>
+<p>使用<a href="https://baike.baidu.com/item/CDN/420951?fr=aladdin" target="_blank" rel="noopener">CDN</a>分发，直接找到三方库的<code>spec</code>地址，直接下载。 所以，不再需要全量下载 <a href="https://github.com/CocoaPods/Specs.git" target="_blank" rel="noopener">https://github.com/CocoaPods/Specs.git</a> 到本地。如果你已经升级到了<code>1.8+</code>版本，<code>repo master</code>就没有用了，终端输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove master</span><br></pre></td></tr></table></figure>
+
+<p>清理出宝贵的硬盘空间。</p>
+</li>
+</ul>
+<h1 id="解决办法"><a href="#解决办法" class="headerlink" title="解决办法"></a>解决办法</h1><p>修改<code>hosts</code>文件，添加指定<code>ip</code>。终端输入：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">sudo vi &#x2F;etc&#x2F;hosts</span><br></pre></td></tr></table></figure>
+
+<p>会要求输入系统密码，之后<code>hosts</code>文件就自动打开了。进入编辑模式，在<code>hosts</code>文件中添加：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">199.232.4.133 raw.githubusercontent.com</span><br></pre></td></tr></table></figure>
+
+<p>保存退出之后，就可以正常使用<code>CocoaPods</code>了。</p>
+<p>另外，看到很多解决办法是说：在<code>Podfile</code>文件中指定<code>source</code>源：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">source &#39;https:&#x2F;&#x2F;github.com&#x2F;CocoaPods&#x2F;Specs.git&#39;</span><br></pre></td></tr></table></figure>
+
+<p>然后：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">pod repo remove trunk</span><br></pre></td></tr></table></figure>
+
+<p>这种方案虽然可行，但是又回到了老版的方式了，缺点在上面已经说了，除非修改<code>hosts</code>文件的办法不好用了，否则不太建议。</p>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>CocoaPods</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>一个关于NSUInteger的小细节</title>
+    <url>/2020/05/27/%E4%B8%80%E4%B8%AA%E5%85%B3%E4%BA%8ENSUInteger%E7%9A%84%E5%B0%8F%E7%BB%86%E8%8A%82/</url>
+    <content><![CDATA[<h1 id="先看一段代码："><a href="#先看一段代码：" class="headerlink" title="先看一段代码："></a>先看一段代码：</h1><p>萌新经常会写出这样的代码：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">&#x2F;&#x2F; array 是一个数组，做一个遍历数组的操作</span><br><span class="line">for (int i &#x3D; 0; i &lt; array.count - 1; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<p>乍一看好像没什么问题啊？其实不然，这里隐藏了一个很大的<code>bug</code>：当数组<code>array</code>为空数组时，循环体依然会执行，并且会执行到“天荒地老”。萌新一脸懵逼，甚至有点怀疑人生:joy:。</p>
+<a id="more"></a>
+
+<h1 id="为什么会出现这种情况呢？"><a href="#为什么会出现这种情况呢？" class="headerlink" title="为什么会出现这种情况呢？"></a>为什么会出现这种情况呢？</h1><p>让我们一点点分析。</p>
+<p>循环体能够执行说明满足了循环条件，那么问题就出在<code>array.count - 1</code>的身上了。</p>
+<p>点进<code>API</code>文档，可以看到<code>array</code>的<code>count</code>属性返回的是一个<code>NSUInteger</code>类型的值，也就是无符号长整型。当数组元素为空时，我们打印下<code>array.count - 1</code>的值，发现控制台输出：<code>18446744073709551615ld</code>，What？不应该是<code>-1</code>吗？？？</p>
+<p>实际上，在计算机中，数字是用“补码”表示的：</p>
+<p>正数的补码 = 原码 = 反码；<br>负数的补码 = 反码 (原码取反，最高位符号位不取反) +1 ；</p>
+<p><code>64</code>位操作系统的下，我们计算下<code>-1</code>的补码：<br>原码：<br><strong>1000 0000 0000 0000 0000 0000 0000 0000</strong><br><strong>0000 0000 0000 0000 0000 0000 0000 0001</strong><br>反码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1110</strong><br>补码：<br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong><br><strong>1111 1111 1111 1111 1111 1111 1111 1111</strong></p>
+<p>所以就得到了一个很大的十进制数：<code>18446744073709551615ld</code>。</p>
+<p>到这里问题就搞清楚了。解决办法也很简单，只需要做一次类型转换就可以了：</p>
+<figure class="highlight plain"><table><tr><td class="code"><pre><span class="line">NSIteger n &#x3D; array.count - 1;</span><br><span class="line">for (int i &#x3D; 0; i &lt; n; i++) &#123;</span><br><span class="line">    &#x2F;&#x2F; 一些操作</span><br><span class="line">    NSLog(@&quot;123&quot;);</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Objective-C</tag>
+        <tag>原理初探</tag>
+      </tags>
+  </entry>
+  <entry>
     <title>最近面试遇到的算法题汇总</title>
     <url>/2020/05/27/%E6%9C%80%E8%BF%91%E9%9D%A2%E8%AF%95%E9%81%87%E5%88%B0%E7%9A%84%E7%AE%97%E6%B3%95%E9%A2%98%E6%B1%87%E6%80%BB/</url>
     <content><![CDATA[<h1 id="背景"><a href="#背景" class="headerlink" title="背景"></a>背景</h1><p>今年受疫情的影响，工作不太好找。也投了不少简历，只有几家邀面试的：58同城、最右、快手、新东方，除了最右其它都是视频面试。总的来看：公司对个人能力要求还是挺高的，面试问的问题都是由浅入深，算法也是必考的。</p>
@@ -321,6 +309,57 @@
         <tag>算法</tag>
         <tag>面试</tag>
         <tag>Swift</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>单链表反转</title>
+    <url>/2020/05/27/%E5%8D%95%E5%90%91%E9%93%BE%E8%A1%A8%E5%8F%8D%E8%BD%AC/</url>
+    <content><![CDATA[<h1 id="单链表反转"><a href="#单链表反转" class="headerlink" title="单链表反转"></a>单链表反转</h1><p>单链表的数据结构如下图所示：</p>
+<p><img src="https://pic.downk.cc/item/5ece1b76c2a9a83be57a4624.png" alt="image.png"></p>
+<p>假如有一个单链表是：1-&gt;2-&gt;3-&gt;4-&gt;NULL，那么经过反转后就变为：4-&gt;3-&gt;2-&gt;1-&gt;NULL。</p>
+<a id="more"></a>
+
+<h1 id="具体代码实现"><a href="#具体代码实现" class="headerlink" title="具体代码实现"></a>具体代码实现</h1><ul>
+<li><p>定义单链表</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="class"><span class="keyword">struct</span> <span class="title">Node</span>&#123;</span></span><br><span class="line">    <span class="keyword">int</span> data;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">next</span>;</span></span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>构造单链表</p>
+<p>构造单链表的思想就是：创建一个节点，然后判断是否有头结点，如果有，就将当前节点的<code>next</code>指向新创建的节点，然后将当前节点向后移动；如果没有，就将头结点和当前节点都赋值为新创建的节点。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">struct Node* <span class="title">constructList</span><span class="params">(<span class="keyword">void</span>)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义头部节点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">head</span> = <span class="title">NULL</span>;</span></span><br><span class="line">    <span class="comment">// 记录当前结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">cur</span> = <span class="title">NULL</span>;</span></span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="keyword">int</span> i = <span class="number">1</span>; i &lt; <span class="number">5</span>; i++) &#123;</span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">node</span> = <span class="title">malloc</span>(<span class="title">sizeof</span>(<span class="title">struct</span> <span class="title">Node</span>));</span></span><br><span class="line">        node-&gt;data = i;</span><br><span class="line">        node-&gt;next = <span class="literal">NULL</span>;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (head == <span class="literal">NULL</span>) &#123;</span><br><span class="line">            <span class="comment">// 头结点为空，当前节点为头结点</span></span><br><span class="line">            head = node;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="comment">// 当前节点的 next 为新节点</span></span><br><span class="line">            cur-&gt;next = node;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// 设置当前节点</span></span><br><span class="line">        cur = node;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> head;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>链表反转（头插法）</p>
+<p>头插法需要我们定义一个新的头结点作为新的链表，然后利用头插法，将原来的链表的每一个节点取出来，然后去新的链表里面做头插法，这样就可以反转了，这里需要一个新的头结点，和遍历原来链表的一个<code>p</code>指针。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function">struct Node* <span class="title">reverseList</span><span class="params">(struct Node *head)</span> </span>&#123;</span><br><span class="line">    <span class="comment">// 定义一个遍历指针，并初始化为头结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">p</span> = <span class="title">head</span>;</span></span><br><span class="line">    <span class="comment">// 反转后的头结点</span></span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">newH</span> = <span class="title">NULL</span>;</span></span><br><span class="line">    <span class="comment">// 遍历链表</span></span><br><span class="line">    <span class="keyword">while</span> (p != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="comment">// 记录下一个节点</span></span><br><span class="line">        <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">temp</span> = <span class="title">p</span>-&gt;<span class="title">next</span>;</span></span><br><span class="line">        <span class="comment">// 当前节点的 next 指向新链表头部</span></span><br><span class="line">        p-&gt;next = newH;</span><br><span class="line">        <span class="comment">// 更改新链表头部为当前节点</span></span><br><span class="line">        newH = p;</span><br><span class="line">        <span class="comment">// 移动 p 指针</span></span><br><span class="line">        p = temp;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> newH;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>打印链表数据</p>
+<p>最后，我们打印下链表数据，看下效果。</p>
+<figure class="highlight c"><table><tr><td class="code"><pre><span class="line"><span class="function"><span class="keyword">void</span> <span class="title">printList</span><span class="params">(struct Node *node)</span> </span>&#123;</span><br><span class="line">    <span class="class"><span class="keyword">struct</span> <span class="title">Node</span> *<span class="title">temp</span> = <span class="title">node</span>;</span></span><br><span class="line">    <span class="keyword">while</span> (temp != <span class="literal">NULL</span>) &#123;</span><br><span class="line">        <span class="built_in">printf</span>(<span class="string">"node is %d \n"</span>, temp-&gt;data);</span><br><span class="line">        temp = temp-&gt;next;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure></li>
+</ul>
+]]></content>
+      <categories>
+        <category>技术</category>
+      </categories>
+      <tags>
+        <tag>Objective-C</tag>
+        <tag>算法</tag>
+      </tags>
+  </entry>
+  <entry>
+    <title>About Me</title>
+    <url>/2020/05/27/About-Me/</url>
+    <content><![CDATA[<p>坐标：北京</p>
+<p>GitHub：<a href="https://github.com/bestDew" target="_blank" rel="noopener">bestDew</a></p>
+<p>邮箱：<a href="mailto:a_pple0429@163.com">a_pple0429@163.com</a></p>
+<p><img src="https://pic.downk.cc/item/5ece03d2c2a9a83be5594e21.png" alt="avatar.png"></p>
+<blockquote>
+<p>一名文艺的 iOS 开发者~</p>
+</blockquote>
+]]></content>
+      <categories>
+        <category>随笔</category>
+      </categories>
+      <tags>
+        <tag>闲谈</tag>
       </tags>
   </entry>
 </search>
