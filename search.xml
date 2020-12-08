@@ -3,7 +3,9 @@
   <entry>
     <title>日报</title>
     <url>/2020/11/19/work_report/</url>
-    <content><![CDATA[<h1 id="2020年12月08日-星期二"><a href="#2020年12月08日-星期二" class="headerlink" title="2020年12月08日 星期二"></a>2020年12月08日 星期二</h1><h2 id="今日工作："><a href="#今日工作：" class="headerlink" title="今日工作："></a>今日工作：</h2><ol>
+    <content><![CDATA[<a id="more"></a>
+
+<h1 id="2020年12月08日-星期二"><a href="#2020年12月08日-星期二" class="headerlink" title="2020年12月08日 星期二"></a>2020年12月08日 星期二</h1><h2 id="今日工作："><a href="#今日工作：" class="headerlink" title="今日工作："></a>今日工作：</h2><ol>
 <li>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1774" target="_blank" rel="noopener">APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误</a> </li>
 <li>修复bug：<a href="http://123.56.123.64:8080/browse/APP-1774" target="_blank" rel="noopener">APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误</a> </li>
 <li>修复bug： <a href="http://123.56.123.64:8080/browse/APP-1764" target="_blank" rel="noopener">APP-1764 - iOS【关注】视觉还原</a></li>
