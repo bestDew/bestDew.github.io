@@ -42,19 +42,18 @@
     <link href="http://yoursite.com/2020/11/19/work_report/"/>
     <id>http://yoursite.com/2020/11/19/work_report/</id>
     <published>2020-11-18T16:38:19.000Z</published>
-    <updated>2020-12-08T10:06:24.581Z</updated>
+    <updated>2020-12-08T10:09:25.671Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-
-&lt;h1 id=&quot;2020年12月08日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月08日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月08日 星期二&quot;&gt;&lt;/a&gt;2020年12月08日
-        
-      
+      &lt;h1 id=&quot;2020年12月08日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月08日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月08日 星期二&quot;&gt;&lt;/a&gt;2020年12月08日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误&lt;/a&gt; &lt;/li&gt;
+&lt;li&gt;修复bug： &lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1764&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1764 - iOS【关注】视觉还原&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1765&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1765 - iOS-约局【创建约局】视觉还原&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;梳理推送客户端处理逻辑，优化部分代码&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;明日计划：&quot;&gt;&lt;a href=&quot;#明日计划：&quot; class=&quot;headerlink&quot; title=&quot;明日计划：&quot;&gt;&lt;/a&gt;明日计划：&lt;/h2&gt;&lt;p&gt;调试推送&lt;/p&gt;
     
     </summary>
     
