@@ -42,11 +42,16 @@
     <link href="http://yoursite.com/2020/11/19/work_report/"/>
     <id>http://yoursite.com/2020/11/19/work_report/</id>
     <published>2020-11-18T16:38:19.000Z</published>
-    <updated>2020-12-08T10:09:25.671Z</updated>
+    <updated>2020-12-14T13:04:27.932Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2020年12月08日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月08日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月08日 星期二&quot;&gt;&lt;/a&gt;2020年12月08日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+      &lt;h1 id=&quot;2020年12月14日-星期一&quot;&gt;&lt;a href=&quot;#2020年12月14日-星期一&quot; class=&quot;headerlink&quot; title=&quot;2020年12月14日 星期一&quot;&gt;&lt;/a&gt;2020年12月14日 星期一&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;p&gt;1.推送调试 100%&lt;/p&gt;
+&lt;p&gt;2.调试智能手表Demo 100%&lt;/p&gt;
+&lt;p&gt;明日计划：&lt;/p&gt;
+&lt;p&gt;健康模块开发&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;2020年12月08日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月08日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月08日 星期二&quot;&gt;&lt;/a&gt;2020年12月08日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-1&quot;&gt;&lt;a href=&quot;#今日工作：-1&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;修复bug： &lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1764&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1764 - iOS【关注】视觉还原&lt;/a&gt;&lt;/li&gt;
