@@ -42,11 +42,20 @@
     <link href="http://yoursite.com/2020/11/19/work_report/"/>
     <id>http://yoursite.com/2020/11/19/work_report/</id>
     <published>2020-11-18T16:38:19.000Z</published>
-    <updated>2020-12-15T13:26:11.094Z</updated>
+    <updated>2020-12-16T14:08:01.294Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2020年12月15日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月15日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月15日 星期二&quot;&gt;&lt;/a&gt;2020年12月15日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+      &lt;h1 id=&quot;2020年12月16日-星期三&quot;&gt;&lt;a href=&quot;#2020年12月16日-星期三&quot; class=&quot;headerlink&quot; title=&quot;2020年12月16日 星期三&quot;&gt;&lt;/a&gt;2020年12月16日 星期三&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1867&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1867 - iOS【动态详情】评论-回复评论人的昵称过长时展示不全&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1863&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1863 - iOS【创建约局】参数配置页返回基础信息配置页时在返回参数页信息均被清空了&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1826&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1826 - iOS【我的订单】待收货订单详情确认收货后，点击“售后申请”提示无法申请&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1845&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1845 - iOS【推送】约局删除推送点击跳转错误&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;健康模块设备搜索界面完善。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;明日工作：&quot;&gt;&lt;a href=&quot;#明日工作：&quot; class=&quot;headerlink&quot; title=&quot;明日工作：&quot;&gt;&lt;/a&gt;明日工作：&lt;/h2&gt;&lt;p&gt;健康模块首页开发&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;2020年12月15日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月15日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月15日 星期二&quot;&gt;&lt;/a&gt;2020年12月15日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-1&quot;&gt;&lt;a href=&quot;#今日工作：-1&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;修复bug： &lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1832&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1832 - iOS【举报】举报选择“暴露他人隐私”举报理由为必填&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1833&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1833 - iOS【举报】其他&lt;/a&gt;&lt;/li&gt;
 &lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1843&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1843 - iOS【个人中心】编辑-修改昵称加入“@”符号后保存-一致呈请求中无法修改昵称&lt;/a&gt;&lt;/li&gt;
@@ -61,12 +70,12 @@
 &lt;/ol&gt;
 &lt;h2 id=&quot;明日计划：&quot;&gt;&lt;a href=&quot;#明日计划：&quot; class=&quot;headerlink&quot; title=&quot;明日计划：&quot;&gt;&lt;/a&gt;明日计划：&lt;/h2&gt;&lt;p&gt;健康模块开发&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;2020年12月14日-星期一&quot;&gt;&lt;a href=&quot;#2020年12月14日-星期一&quot; class=&quot;headerlink&quot; title=&quot;2020年12月14日 星期一&quot;&gt;&lt;/a&gt;2020年12月14日 星期一&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-1&quot;&gt;&lt;a href=&quot;#今日工作：-1&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;p&gt;1.推送调试 100%&lt;/p&gt;
+&lt;h1 id=&quot;2020年12月14日-星期一&quot;&gt;&lt;a href=&quot;#2020年12月14日-星期一&quot; class=&quot;headerlink&quot; title=&quot;2020年12月14日 星期一&quot;&gt;&lt;/a&gt;2020年12月14日 星期一&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-2&quot;&gt;&lt;a href=&quot;#今日工作：-2&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;p&gt;1.推送调试 100%&lt;/p&gt;
 &lt;p&gt;2.调试智能手表Demo 100%&lt;/p&gt;
 &lt;p&gt;明日计划：&lt;/p&gt;
 &lt;p&gt;健康模块开发&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;2020年12月08日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月08日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月08日 星期二&quot;&gt;&lt;/a&gt;2020年12月08日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-2&quot;&gt;&lt;a href=&quot;#今日工作：-2&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;h1 id=&quot;2020年12月08日-星期二&quot;&gt;&lt;a href=&quot;#2020年12月08日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2020年12月08日 星期二&quot;&gt;&lt;/a&gt;2020年12月08日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-3&quot;&gt;&lt;a href=&quot;#今日工作：-3&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;修复bug：&lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1774&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1774 - iOS【约局】圈子-约局中的圈子成员人数错误&lt;/a&gt; &lt;/li&gt;
 &lt;li&gt;修复bug： &lt;a href=&quot;http://123.56.123.64:8080/browse/APP-1764&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;APP-1764 - iOS【关注】视觉还原&lt;/a&gt;&lt;/li&gt;
