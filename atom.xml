@@ -42,11 +42,18 @@
     <link href="http://yoursite.com/2020/11/19/work_report/"/>
     <id>http://yoursite.com/2020/11/19/work_report/</id>
     <published>2020-11-18T16:38:19.000Z</published>
-    <updated>2020-12-24T14:14:04.785Z</updated>
+    <updated>2020-12-31T11:26:25.875Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2020年12月24日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月24日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月24日 星期四&quot;&gt;&lt;/a&gt;2020年12月24日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+      &lt;h1 id=&quot;2020年12月31日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月31日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月31日 星期四&quot;&gt;&lt;/a&gt;2020年12月31日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;修复一些bug ——100%&lt;/li&gt;
+&lt;li&gt;新版本提交到AppStore——100%&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;明日计划：&lt;/p&gt;
+&lt;p&gt;优化现有需求，开发新需求&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;2020年12月24日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月24日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月24日 星期四&quot;&gt;&lt;/a&gt;2020年12月24日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-1&quot;&gt;&lt;a href=&quot;#今日工作：-1&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;添加数字变化动画——100%&lt;/li&gt;
 &lt;li&gt;添加血压数据变化动画——100%&lt;/li&gt;
 &lt;li&gt;完善本地数据存取逻辑——100%&lt;/li&gt;
