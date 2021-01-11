@@ -42,25 +42,32 @@
     <link href="http://yoursite.com/2020/11/19/work_report/"/>
     <id>http://yoursite.com/2020/11/19/work_report/</id>
     <published>2020-11-18T16:38:19.000Z</published>
-    <updated>2021-01-08T09:34:48.667Z</updated>
+    <updated>2021-01-11T11:54:28.826Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2020年1月8日-星期五&quot;&gt;&lt;a href=&quot;#2020年1月8日-星期五&quot; class=&quot;headerlink&quot; title=&quot;2020年1月8日 星期五&quot;&gt;&lt;/a&gt;2020年1月8日 星期五&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+      &lt;h1 id=&quot;2020年1月11日-星期一&quot;&gt;&lt;a href=&quot;#2020年1月11日-星期一&quot; class=&quot;headerlink&quot; title=&quot;2020年1月11日 星期一&quot;&gt;&lt;/a&gt;2020年1月11日 星期一&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;优化健康模块详情页部分代码——100%&lt;/li&gt;
+&lt;li&gt;排查XR机型打开App卡在启动页的原因——100%&lt;/li&gt;
+&lt;li&gt;与前端联调新春活动页地理位置的获取——100%&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h2 id=&quot;明日计划：&quot;&gt;&lt;a href=&quot;#明日计划：&quot; class=&quot;headerlink&quot; title=&quot;明日计划：&quot;&gt;&lt;/a&gt;明日计划：&lt;/h2&gt;&lt;p&gt;查缺补漏&lt;/p&gt;
+&lt;hr&gt;
+&lt;h1 id=&quot;2020年1月8日-星期五&quot;&gt;&lt;a href=&quot;#2020年1月8日-星期五&quot; class=&quot;headerlink&quot; title=&quot;2020年1月8日 星期五&quot;&gt;&lt;/a&gt;2020年1月8日 星期五&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-1&quot;&gt;&lt;a href=&quot;#今日工作：-1&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;替换最新版手表SDK ——100%&lt;/li&gt;
 &lt;li&gt;熟悉手表固件OTA升级流程及相关API——100%&lt;/li&gt;
 &lt;li&gt;排查各种崩溃Bug——100%&lt;/li&gt;
 &lt;/ol&gt;
-&lt;h2 id=&quot;明日计划：&quot;&gt;&lt;a href=&quot;#明日计划：&quot; class=&quot;headerlink&quot; title=&quot;明日计划：&quot;&gt;&lt;/a&gt;明日计划：&lt;/h2&gt;&lt;p&gt;写代码&lt;/p&gt;
+&lt;h2 id=&quot;明日计划：-1&quot;&gt;&lt;a href=&quot;#明日计划：-1&quot; class=&quot;headerlink&quot; title=&quot;明日计划：&quot;&gt;&lt;/a&gt;明日计划：&lt;/h2&gt;&lt;p&gt;写代码&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;2020年12月31日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月31日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月31日 星期四&quot;&gt;&lt;/a&gt;2020年12月31日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-1&quot;&gt;&lt;a href=&quot;#今日工作：-1&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;h1 id=&quot;2020年12月31日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月31日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月31日 星期四&quot;&gt;&lt;/a&gt;2020年12月31日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-2&quot;&gt;&lt;a href=&quot;#今日工作：-2&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;修复一些bug ——100%&lt;/li&gt;
 &lt;li&gt;新版本提交到AppStore——100%&lt;/li&gt;
 &lt;/ol&gt;
 &lt;p&gt;明日计划：&lt;/p&gt;
 &lt;p&gt;优化现有需求，开发新需求&lt;/p&gt;
 &lt;hr&gt;
-&lt;h1 id=&quot;2020年12月24日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月24日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月24日 星期四&quot;&gt;&lt;/a&gt;2020年12月24日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-2&quot;&gt;&lt;a href=&quot;#今日工作：-2&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;h1 id=&quot;2020年12月24日-星期四&quot;&gt;&lt;a href=&quot;#2020年12月24日-星期四&quot; class=&quot;headerlink&quot; title=&quot;2020年12月24日 星期四&quot;&gt;&lt;/a&gt;2020年12月24日 星期四&lt;/h1&gt;&lt;h2 id=&quot;今日工作：-3&quot;&gt;&lt;a href=&quot;#今日工作：-3&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
 &lt;li&gt;添加数字变化动画——100%&lt;/li&gt;
 &lt;li&gt;添加血压数据变化动画——100%&lt;/li&gt;
 &lt;li&gt;完善本地数据存取逻辑——100%&lt;/li&gt;
