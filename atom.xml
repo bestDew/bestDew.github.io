@@ -42,21 +42,13 @@
     <link href="http://yoursite.com/2020/11/19/work_report/"/>
     <id>http://yoursite.com/2020/11/19/work_report/</id>
     <published>2020-11-18T16:38:19.000Z</published>
-    <updated>2021-01-12T10:36:19.839Z</updated>
+    <updated>2021-01-13T12:33:05.012Z</updated>
     
     <summary type="html">
     
-      &lt;h1 id=&quot;2021年1月12日-星期二&quot;&gt;&lt;a href=&quot;#2021年1月12日-星期二&quot; class=&quot;headerlink&quot; title=&quot;2021年1月12日 星期二&quot;&gt;&lt;/a&gt;2021年1月12日 星期二&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;解决地理位置信息json文件读取后乱序的问题——100%&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;优化部分代码——100%&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;梳理项目启动时可优化的点：&lt;/p&gt;
-&lt;p&gt;a.延长系统启动页停留时长&lt;/p&gt;
-&lt;p&gt;b.启动项优化，包含：第三方SDK初始化、校验&lt;/p&gt;
-&lt;p&gt;c.干掉那个假启动页&lt;/p&gt;
-&lt;p&gt;d.启动弹窗优化，按队列优先级&lt;/p&gt;
-&lt;/li&gt;
+      &lt;h1 id=&quot;2021年1月13日-星期三&quot;&gt;&lt;a href=&quot;#2021年1月13日-星期三&quot; class=&quot;headerlink&quot; title=&quot;2021年1月13日 星期三&quot;&gt;&lt;/a&gt;2021年1月13日 星期三&lt;/h1&gt;&lt;h2 id=&quot;今日工作：&quot;&gt;&lt;a href=&quot;#今日工作：&quot; class=&quot;headerlink&quot; title=&quot;今日工作：&quot;&gt;&lt;/a&gt;今日工作：&lt;/h2&gt;&lt;ol&gt;
+&lt;li&gt;&lt;h2 id=&quot;模块化解耦基础服务类编写——100&quot;&gt;&lt;a href=&quot;#模块化解耦基础服务类编写——100&quot; class=&quot;headerlink&quot; title=&quot;模块化解耦基础服务类编写——100%&quot;&gt;&lt;/a&gt;模块化解耦基础服务类编写——100%&lt;/h2&gt;&lt;/li&gt;
+&lt;li&gt;&lt;h2 id=&quot;AppDelegate-瘦身——30&quot;&gt;&lt;a href=&quot;#AppDelegate-瘦身——30&quot; class=&quot;headerlink&quot; title=&quot;AppDelegate 瘦身——30%&quot;&gt;&lt;/a&gt;AppDelegate 瘦身——30%&lt;/h2&gt;&lt;/li&gt;
 &lt;/ol&gt;
 &lt;h2 id=&quot;明日计划：&quot;&gt;&lt;a href=&quot;#明日计划：&quot; class=&quot;headerlink&quot; title=&quot;明日计划：&quot;&gt;&lt;/a&gt;明日计划：&lt;/h2&gt;&lt;p&gt;启动优化&lt;/p&gt;
     
